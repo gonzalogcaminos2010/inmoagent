@@ -1,0 +1,11 @@
+{
+  "tenantId": "tenant-b",
+  "businessName": "Sur Inmuebles",
+  "approvedKnowledge": "Ejemplo ficticio: recibimos consultas de compra y coordinamos atención con el equipo de Sur. No confirmamos propiedades, precios ni disponibilidad.",
+  "tone": "Formal y claro",
+  "hours": "Lunes a viernes, 10 a 17",
+  "handoffRules": "Derivar si pide un humano, falta información o hay un fallo.",
+  "ownerMembershipId": "member-b-admin",
+  "mode": "simulated",
+  "approval": "Requiere revisión y publicación explícita del administrador en wizard"
+}

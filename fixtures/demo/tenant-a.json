@@ -1,0 +1,11 @@
+{
+  "tenantId": "tenant-a",
+  "businessName": "Río Propiedades",
+  "approvedKnowledge": "Ejemplo ficticio: coordinamos consultas de alquiler en el centro con un responsable humano. No confirmamos precios, propiedades ni disponibilidad.",
+  "tone": "Cercano y claro",
+  "hours": "Lunes a viernes, 9 a 18",
+  "handoffRules": "Derivar si pide un humano, falta información o hay un fallo.",
+  "ownerMembershipId": "member-a-admin",
+  "mode": "simulated",
+  "approval": "Requiere revisión y publicación explícita del administrador en wizard"
+}

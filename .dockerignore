@@ -1,0 +1,16 @@
+.git
+node_modules
+dist
+.env
+.env.*
+**/*.dump
+**/*.tar
+**/*.tar.gz
+**/*.zip
+**/*htpasswd*
+backups
+playwright-report
+test-results
+**/*-evidence.json
+**/TRANSFERENCIA-MANUAL.md
+.DS_Store

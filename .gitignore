@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.inmo-build-cache/
+.env
+.env.*
+!.env.example
+backups/
+*.dump
+*.tar
+*.tar.gz
+*.zip
+*htpasswd*
+playwright-report/
+test-results/
+*-evidence.json
+TRANSFERENCIA-MANUAL.md
+.DS_Store

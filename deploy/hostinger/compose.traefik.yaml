@@ -1,0 +1,21 @@
+# Optional only after explicit approval of this hostname/router/network exposure.
+# Combine with compose.yaml; never run the overlay alone. Compose !reset support required.
+services:
+  db:
+    labels: {traefik.enable: 'false'}
+  migrate:
+    labels: {traefik.enable: 'false'}
+  api:
+    ports: !reset []
+    labels:
+      traefik.enable: 'true'
+      traefik.docker.network: inmoagent-review-ingress
+      traefik.http.routers.inmoagent-review.rule: Host(`${DEMO_HOSTNAME:?Set approved exact hostname}`)
+      traefik.http.routers.inmoagent-review.entrypoints: websecure
+      traefik.http.routers.inmoagent-review.tls: 'true'
+      traefik.http.routers.inmoagent-review.tls.certresolver: letsencrypt
+      traefik.http.routers.inmoagent-review.service: inmoagent-review
+      traefik.http.services.inmoagent-review.loadbalancer.server.port: '8080'
+      traefik.http.services.inmoagent-review.loadbalancer.server.scheme: http
+  web:
+    labels: {traefik.enable: 'false'}
